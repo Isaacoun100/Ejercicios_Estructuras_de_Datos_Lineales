@@ -1,7 +1,7 @@
 package com.itcr.ce.datos.datoslineales;
 
 import com.itcr.ce.datos.datoslineales.dataStructures.SinglyList;
-import import java.util.Random;
+import java.util.Random;
 
 public class Main {
 
@@ -14,15 +14,19 @@ public class Main {
 
         while(a<15){
             newList.add(random.nextInt(25));
+            a++;
         }
 
         System.out.println("The list is:");
-
         newList.print();
 
-        System.out.println("Minimum and maximum are");
+        System.out.println("And their average");
 
-        newList.maxmin();
+        newList.average();
+        newList.print();
+
+
+
 
         System.out.println("Odd multiplied and even summed");
 
@@ -33,12 +37,10 @@ public class Main {
         addPairOfNodes();
         newList.print();
 
-        System.out.println("And their average");
+        System.out.println("Minimum and maximum are");
 
-        newList.average();
-        newList.print();
+        newList.maxmin();
 
 
     }
-
 }
