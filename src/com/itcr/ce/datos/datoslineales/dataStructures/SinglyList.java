@@ -49,6 +49,31 @@ public class SinglyList {
         return list;
     }
 
+    public void addPairOfNodes() {
+        SinglyNode node1;
+        SinglyNode node2;
+        SinglyNode addedNode;
+        int addedData;
+        if (this.head == null || this.head.getNext() == null) {
+            System.out.println("Not enough nodes in list");
+            return;
+        }
+        node1 = this.head;
+        while (node1.getNext() != null) {
+            node2 = node1.getNext();
+            addedData =  (node1.getData() + node2.getData());
+            addedNode = new SinglyNode(addedData);
+            if (node2.getNext() != null) {
+                addedNode.setNext(node2.getNext());
+                node1 = addedNode.getNext();
+                node2.setNext(addedNode);
+            }else {
+                node2.setNext(addedNode);
+                break;
+            }
+        }
+    }
+
     public void print() {
         SinglyNode currentNode = this.head;
 
