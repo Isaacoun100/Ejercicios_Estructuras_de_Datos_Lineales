@@ -23,6 +23,30 @@ public class SinglyList {
             // Insert the newNode at last node
             lastNode.setNext(newNode);
         }
+        size++;
+    }
+
+    public SinglyList addEvenMultodd() {
+        SinglyNode current;
+        SinglyList list = new SinglyList();
+        int addEven = 0;
+        int multOdd = 1;
+        if (this.head == null) {
+            System.out.println("List is empty");
+            return null;
+        }
+        current = this.head;
+        for (int i = 0; i < this.size; i++){
+            if (i % 2 == 0) {
+                addEven += current.getData();
+            } else {
+                multOdd *= current.getData();
+            }
+            current = current.getNext();
+        }
+        list.add(addEven);
+        list.add(multOdd);
+        return list;
     }
 
     public void print() {
