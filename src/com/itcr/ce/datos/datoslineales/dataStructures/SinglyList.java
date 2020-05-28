@@ -26,7 +26,7 @@ public class SinglyList {
         size++;
     }
 
-    //Excercise 1
+    //Exercise 1
     public void average(){
 
         SinglyNode temp = this.head;
@@ -48,7 +48,7 @@ public class SinglyList {
         }
     }
 
-    //Excercise 2
+    //Exercise 2
     public SinglyList addEvenMultodd() {
         SinglyNode current;
         SinglyList list = new SinglyList();
@@ -72,7 +72,7 @@ public class SinglyList {
         return list;
     }
 
-    //Excercise 3
+    //Exercise 3
     public void addPairOfNodes() {
         SinglyNode node1;
         SinglyNode node2;
@@ -98,7 +98,7 @@ public class SinglyList {
         }
     }
 
-    //Excercise 4
+    //Exercise 4
     public void maxmin(){
 
         SinglyNode temporal= this.head;
