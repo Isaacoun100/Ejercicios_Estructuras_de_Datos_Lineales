@@ -28,13 +28,13 @@ public class Main {
 
 
 
-        System.out.println("Odd multiplied and even summed");
+        System.out.println("Even added and odd multiplied");
 
-        addEvenMultodd().print();
+        newList.addEvenMultodd().print();
 
         System.out.println("Each 2 nodes, will add the sum of the previous");
 
-        addPairOfNodes();
+        newList.addPairOfNodes();
         newList.print();
 
         System.out.println("Minimum and maximum are");
