@@ -14,8 +14,7 @@ public class SinglyList {
         SinglyNode newNode = new SinglyNode(data);
         if (this.head == null) {
             this.head = newNode;
-        }
-        else{
+        } else {
             // Else traverse till the last node and insert the newNode there
             SinglyNode lastNode = this.head;
             while (lastNode.getNext() != null) {
