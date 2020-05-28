@@ -6,6 +6,14 @@ public class Main {
 
     public static void main(String[] args) {
 
+        SinglyList list = new SinglyList();
+        for (int i = 0; i < 9; i++) {
+            list.add(i);
+        }
+        list.print();
+
+        list.addEvenMultodd().print();
+
     }
 
 }
